@@ -1,0 +1,215 @@
+.root{
+    width: 0;
+    height: 0;
+}
+.navbar img{
+    width: 55px;
+    height: 52px;
+    position: absolute;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 14px 58px;
+    font-size: 23px;
+}
+.navbar{
+    display: flex;
+    /* By displaying flex it will assign everything in a single vertical row */
+    align-items:center;
+    /* This will assign the items in center */
+    width: 100%;
+    background-color:rgb(252, 249, 249);
+    color: rgb(26, 25, 25);
+    height: 3rem;
+    position: absolute;
+    top:0px;
+}
+.navbar li a{
+    font-size: 23px;
+}
+.navbar li:hover{
+    color: black;
+    background-color: rgb(134, 118, 118);
+    cursor: pointer;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height:657px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 200px;
+
+}
+/* Now using pseudo selectors we will add image in home section  */
+#home::before{
+    content: "";
+    position: absolute; 
+    background: url("../L1.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+
+
+}
+#home h2{
+    font-size: 3em;
+    font-family: 'Fira Sans', sans-serif;
+}
+#home p{
+    font-size: 20px;
+    background-color: rgb(201, 212, 182);
+    padding: 6px;
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.btn {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    border:25px 27px;
+    margin: 22px 20px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+/* Services Section */
+#services{
+    margin: 4px;
+    display: flex;
+}
+.services-container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: rgb(16, 16, 37);
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 13px;
+    margin: 8px;
+    border-radius: 24px;
+    background-color: rgb(250, 249, 246);
+
+}
+#services img{
+    margin: auto;
+    display: block; 
+    padding: 20px 5px 5px 5px;
+    /* margin auto will never work unless display is block */
+    height: 175px;
+    width:175px;
+}
+.box h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    font-family: 'Fira Sans', sans-serif;
+}
+#services .box p{
+ font-size: 19px;
+
+}
+
+.client-section h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: rgb(16, 16, 37);
+}
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 7px;
+}
+.clients .client-items img{
+    margin-left: 33px;
+    height: 10em;
+    width: 10em;
+    padding: 8px;
+}
+.client-section::before{
+    content: "";
+    position: absolute; 
+    background: url("../bg3.webp") no-repeat center center/cover;
+    height: 38%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../contact.webp") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+}
+#contact-box{
+
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#conatct-box .form-group label,input{
+padding: 7px;
+width: 100%;
+border-radius: 10px;
+font-size: 18px;
+height: 35%;
+margin-bottom:8px;
+font-family: 'Fira Sans', sans-serif;
+}
+input{
+    width: 100%;
+}
+
+    
+label {
+    font-size:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3px;
+    margin:3px;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 22px;
+    font-size: 22px;
+
+}
+
